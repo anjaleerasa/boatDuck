@@ -23,7 +23,7 @@ struct ContentView: View {
                     .font(.subheadline)
                     .multilineTextAlignment(.center)
                 Button{
-                    japanButt = false
+                    japanButt = true
                 }label: {
                     Image("duckIcon")
                         .resizable()
@@ -34,6 +34,8 @@ struct ContentView: View {
                 
                 
             }
+        }
+        .sheet(isPresented: $japanButt){
         }
     }
 }
