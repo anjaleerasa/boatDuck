@@ -11,6 +11,8 @@
 		BD6DF06C2A4B2F1900028DE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF06B2A4B2F1900028DE5 /* ContentView.swift */; };
 		BD6DF06E2A4B2F1A00028DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DF06D2A4B2F1A00028DE5 /* Assets.xcassets */; };
 		BD6DF0712A4B2F1A00028DE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DF0702A4B2F1A00028DE5 /* Preview Assets.xcassets */; };
+		BD6DF0782A4B344300028DE5 /* financeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF0772A4B344300028DE5 /* financeCalculator.swift */; };
+		BD6DF07A2A4B35BE00028DE5 /* moneyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF0792A4B35BE00028DE5 /* moneyFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		BD6DF06B2A4B2F1900028DE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD6DF06D2A4B2F1A00028DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD6DF0702A4B2F1A00028DE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD6DF0772A4B344300028DE5 /* financeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financeCalculator.swift; sourceTree = SOURCE_ROOT; };
+		BD6DF0792A4B35BE00028DE5 /* moneyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moneyFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		BD6DF0682A4B2F1900028DE5 /* boatDuck */ = {
 			isa = PBXGroup;
 			children = (
+				BD6DF0772A4B344300028DE5 /* financeCalculator.swift */,
 				BD6DF0692A4B2F1900028DE5 /* boatDuckApp.swift */,
 				BD6DF06B2A4B2F1900028DE5 /* ContentView.swift */,
+				BD6DF0792A4B35BE00028DE5 /* moneyFile.swift */,
 				BD6DF06D2A4B2F1A00028DE5 /* Assets.xcassets */,
 				BD6DF06F2A4B2F1A00028DE5 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				BD6DF06C2A4B2F1900028DE5 /* ContentView.swift in Sources */,
 				BD6DF06A2A4B2F1900028DE5 /* boatDuckApp.swift in Sources */,
+				BD6DF07A2A4B35BE00028DE5 /* moneyFile.swift in Sources */,
+				BD6DF0782A4B344300028DE5 /* financeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
