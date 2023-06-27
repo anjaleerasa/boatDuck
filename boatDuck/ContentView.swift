@@ -11,6 +11,9 @@ struct ContentView: View {
     @State private var japanButt = false
     var body: some View {
         ZStack{
+            Color(hue: 0.092, saturation: 0.358, brightness: 0.247)
+
+                .edgesIgnoringSafeArea(.all)
             VStack{
               Image("map")
                     .resizable()
@@ -36,6 +39,7 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $japanButt){
+            
         }
     }
 }
