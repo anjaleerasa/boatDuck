@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct financeCalculator: View {
+    @State private var code = ""
+    @State private var savedNumber = Int()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("Enter your total budget in USD:", text : $code)
+                .textContentType(.oneTimeCode)
+                .keyboardType(.numberPad)
+                .padding()
+                .border(Color.pink)
+                .multilineTextAlignment(.center)
+                .frame(width:300,height:40)
+            
+            Button(action:{
+                if let integerValue = Int(self.code){
+                    self.savedNumber = integerValue
+                    self.code = ""
+                }
+                    
+            }){
+                Text("save number")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            }
+            //string to num
+            
+        }
     }
 }
 
