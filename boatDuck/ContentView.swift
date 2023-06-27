@@ -44,31 +44,27 @@ struct ContentView: View {
         }
         .sheet(isPresented: $japanButt){
             ZStack{
-                        Color("colorSheet")
+                        Color("colorsheet")
                             .ignoresSafeArea(.all)
-                        VStack{
-                           
-                            Text("-this is sailor-")
-                                .font(.subheadline)
-                                .foregroundColor(Color.white)
-                            
-                            Button{
-                                japanButt = true
-                            }label: {
-                                Image("duckIcon")
-                                    .resizable()
-                                    .frame(width:100, height: 100)
-                            }
-                            .buttonStyle(.borderedProminent)
-                            .font(.footnote)
-                            .fontWeight(.medium)
-                            .tint(Color(hue: 0.075, saturation: 0.113, brightness: 0.481))
-                       //yay
-                        }
-                        }
+                VStack{
+                    HStack{
+                        Image("leftBlue")
+                        .resizable()
+                          .frame(width:300, height:300)
+                        Image("swimDuck")
+                           .resizable()
+                            .frame(width:400, height:300)
+                        Image("rightBlue")
+                            .resizable()
+                        .frame(width:300, height:300)
+                        
                     }
                 }
-        }
+//
+                        }
+        }//end of sheet
+                    }
+                }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
