@@ -3,7 +3,7 @@
 //  boatDuck
 //
 //  Created by Scholar on 6/27/23.
-//yh
+//skjhdg
 
 import SwiftUI
 
@@ -46,7 +46,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $japanButt){
             ZStack{
-                        Color("colorsheet")
+                        Color("colorSheet")
                             .ignoresSafeArea(.all)
                 VStack{
                     HStack{
