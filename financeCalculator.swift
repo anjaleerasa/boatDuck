@@ -17,7 +17,7 @@ struct financeCalculator: View {
                 .textContentType(.oneTimeCode)
                 .keyboardType(.numberPad)
                 .padding()
-                .border(Color.pink)
+                .border(Color(hue: 0.067, saturation: 0.17, brightness: 0.849))
                 .multilineTextAlignment(.center)
                 .frame(width:300,height:40)
             
@@ -34,7 +34,7 @@ struct financeCalculator: View {
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color(hue: 0.012, saturation: 0.073, brightness: 0.749))
                     .cornerRadius(10)
             }
             //string to num
