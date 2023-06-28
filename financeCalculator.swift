@@ -38,6 +38,8 @@ struct financeCalculator: View {
                     .cornerRadius(10)
                 
             }
+            var rateJPY = 144.93
+            
         }
     }
 }
