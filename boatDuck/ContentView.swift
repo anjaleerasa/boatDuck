@@ -35,7 +35,7 @@ struct ContentView: View {
                         .resizable()
                         .frame(width:100, height: 100)
                 }
-                Text("✿-TOKYO-✿")
+                Text("✿-CLICK SAILOR-✿")
                     .font(.footnote)
                     .fontWeight(.bold)
                     .foregroundColor(Color(hue: 1.0, saturation: 0.061, brightness: 0.577))
