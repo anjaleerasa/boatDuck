@@ -48,16 +48,37 @@ struct ContentView: View {
                             .ignoresSafeArea(.all)
                 VStack{
                     HStack{
+                       
+                        Image("upperLeft")
+                        .resizable()
+                          .frame(width:150, height:150)
+                        Image("upperRight")
+                        .resizable()
+                          .frame(width:150, height:150)
+                        
+                    }
+                
+                    HStack{
                         Image("leftBlue")
                         .resizable()
-                          .frame(width:300, height:300)
+                          .frame(width:150, height:150)
                         Image("swimDuck")
                            .resizable()
-                            .frame(width:400, height:300)
+                            .frame(width:100, height:100)
                         Image("rightBlue")
                             .resizable()
-                        .frame(width:300, height:300)
-                        
+                        .frame(width:150, height:150)
+                    }
+                   
+                    HStack{
+                        Spacer()
+                        Image("lowerLeft")
+                        .resizable()
+                          .frame(width:150, height:150)
+                        Image("lowerRight")
+                        .resizable()
+                          .frame(width:150, height:150)
+                        Spacer()
                     }
                 }
 //
