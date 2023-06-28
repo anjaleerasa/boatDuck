@@ -50,9 +50,12 @@ struct ContentView: View {
                             .ignoresSafeArea(.all)
                 VStack{
                     HStack{
-                        Image("upperLeft")
-                        .resizable()
-                          .frame(width:150, height:150)
+                        Button{
+                            nestedCultureButt = true
+                        }label: {
+                            Image("upperLeft")
+                                .resizable()
+                            .frame(width:150, height:150)}
                         Button{
                             nestedCultureButt = true
                         }label: {
@@ -68,25 +71,38 @@ struct ContentView: View {
                     }
                 
                     HStack{
-                        Image("leftBlue")
-                        .resizable()
-                          .frame(width:150, height:150)
+                        Button{
+                            nestedCultureButt = true
+                        }label:{
+                            Image("leftBlue")
+                                .resizable()
+                            .frame(width:150, height:150)}
                         Image("swimDuck")
                            .resizable()
                             .frame(width:100, height:100)
-                        Image("rightBlue")
-                            .resizable()
-                        .frame(width:150, height:150)
+                        Button{
+                            nestedCultureButt = true
+                        }label: {
+                            Image("rightBlue")
+                                .resizable()
+                                .frame(width:150, height:150)
+                        }
                     }
                    
                     HStack{
                         Spacer()
-                        Image("lowerLeft")
-                        .resizable()
-                          .frame(width:150, height:150)
-                        Image("lowerRight")
-                        .resizable()
-                          .frame(width:150, height:150)
+                        Button{
+                            nestedCultureButt = true
+                        }label:{
+                            Image("lowerLeft")
+                                .resizable()
+                            .frame(width:150, height:150)}
+                        Button{
+                            nestedCultureButt = true
+                        }label:{
+                            Image("lowerRight")
+                                .resizable()
+                            .frame(width:150, height:150)}
                         Spacer()
                     }
                 }
