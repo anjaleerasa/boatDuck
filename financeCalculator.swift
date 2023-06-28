@@ -26,7 +26,7 @@ struct financeCalculator: View {
                     savedNumber = integerValue
                 }
                 code = ""
-                var newNumber = savedNumber
+                var totalUSD = savedNumber
                     
             })
             {
@@ -36,9 +36,8 @@ struct financeCalculator: View {
                     .padding()
                     .background(Color(hue: 0.012, saturation: 0.073, brightness: 0.749))
                     .cornerRadius(10)
+                
             }
-            //string to num
-            
         }
     }
 }
