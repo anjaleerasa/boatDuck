@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var japanButt = false
     @State private var cultureButt = false
+    @State private var nestedCultureButt = false
     var body: some View {
         ZStack{
             Color("tessaColor")
@@ -34,7 +35,7 @@ struct ContentView: View {
                         .resizable()
                         .frame(width:100, height: 100)
                 }
-                Text("✿-JAPAN-✿")
+                Text("✿-TOKYO-✿")
                     .font(.footnote)
                     .fontWeight(.bold)
                     .foregroundColor(Color(hue: 1.0, saturation: 0.061, brightness: 0.577))
@@ -53,12 +54,17 @@ struct ContentView: View {
                         .resizable()
                           .frame(width:150, height:150)
                         Button{
-                            cultureButt = true
+                            nestedCultureButt = true
                         }label: {
                             Image("upperRight")
                                 .resizable()
                                 .frame(width:150, height:150)
                         }
+//                        NavigationStack{
+//                            NavigationLink(destination:culture()){
+//                                Text("upperRight")
+//                            }
+//                        }
                     }
                 
                     HStack{
@@ -84,14 +90,11 @@ struct ContentView: View {
                         Spacer()
                     }
                 }
+                
 //
                         }
         }//end of sheet
-        .sheet(isPresented: $cultureButt){
-        
-        }
-        
-                    }
+                    }//end of body
                 }
 
 struct ContentView_Previews: PreviewProvider {
