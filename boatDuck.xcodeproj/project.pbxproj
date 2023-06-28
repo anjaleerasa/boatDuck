@@ -14,6 +14,7 @@
 		BD6DF0782A4B344300028DE5 /* financeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF0772A4B344300028DE5 /* financeCalculator.swift */; };
 		BD6DF07A2A4B35BE00028DE5 /* moneyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF0792A4B35BE00028DE5 /* moneyFile.swift */; };
 		BDD99AE42A4CACC2001274AD /* boatDuckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD99AE32A4CACC2001274AD /* boatDuckApp.swift */; };
+		BDE807192A4CAF16006D6B73 /* budgetClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE807182A4CAF16006D6B73 /* budgetClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BD6DF0772A4B344300028DE5 /* financeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financeCalculator.swift; sourceTree = SOURCE_ROOT; };
 		BD6DF0792A4B35BE00028DE5 /* moneyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moneyFile.swift; sourceTree = "<group>"; };
 		BDD99AE32A4CACC2001274AD /* boatDuckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boatDuckApp.swift; sourceTree = "<group>"; };
+		BDE807182A4CAF16006D6B73 /* budgetClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = budgetClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		BD6DF0682A4B2F1900028DE5 /* boatDuck */ = {
 			isa = PBXGroup;
 			children = (
+				BDE807182A4CAF16006D6B73 /* budgetClass.swift */,
 				BD6DF0772A4B344300028DE5 /* financeCalculator.swift */,
 				BD43E0902A4CA6600011549C /* culture.swift */,
 				BDD99AE32A4CACC2001274AD /* boatDuckApp.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD99AE42A4CACC2001274AD /* boatDuckApp.swift in Sources */,
+				BDE807192A4CAF16006D6B73 /* budgetClass.swift in Sources */,
 				BD43E0912A4CA6600011549C /* culture.swift in Sources */,
 				BD6DF06C2A4B2F1900028DE5 /* ContentView.swift in Sources */,
 				BD6DF07A2A4B35BE00028DE5 /* moneyFile.swift in Sources */,
