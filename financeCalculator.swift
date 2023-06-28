@@ -10,7 +10,6 @@ import SwiftUI
 struct financeCalculator: View {
     @State private var code = ""
     @State private var savedNumber = Int()
-    var totalUSD = 0
     var body: some View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         VStack{
@@ -23,10 +22,11 @@ struct financeCalculator: View {
                 .frame(width:300,height:40)
             
             Button(action:{
-                if let integerValue = Int(self.code){
-                    self.savedNumber = integerValue
-                    self.code = ""
+                if let integerValue = Int(code){
+                    savedNumber = integerValue
                 }
+                code = ""
+                var newNumber = savedNumber
                     
             })
             {
