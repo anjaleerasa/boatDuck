@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var japanButt = false
+    @State private var cultureButt = false
     var body: some View {
         ZStack{
             Color("tessaColor")
@@ -48,14 +49,16 @@ struct ContentView: View {
                             .ignoresSafeArea(.all)
                 VStack{
                     HStack{
-                       
                         Image("upperLeft")
                         .resizable()
                           .frame(width:150, height:150)
-                        Image("upperRight")
-                        .resizable()
-                          .frame(width:150, height:150)
-                        
+                        Button{
+                            cultureButt = true
+                        }label: {
+                            Image("upperRight")
+                                .resizable()
+                                .frame(width:150, height:150)
+                        }
                     }
                 
                     HStack{
@@ -84,6 +87,10 @@ struct ContentView: View {
 //
                         }
         }//end of sheet
+        .sheet(isPresented: $cultureButt){
+        
+        }
+        
                     }
                 }
 
