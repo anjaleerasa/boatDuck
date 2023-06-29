@@ -15,7 +15,7 @@ struct financeCalculator: View {
     @State public var tAccm = 0.0
     @State public var tActv = 0.0
     @State public var tTotal = 0.0
-    @State public var trueFalse= false
+    @State public var trueFalse = false
   
     
     var body: some View {
@@ -82,16 +82,24 @@ struct financeCalculator: View {
                 Text("Your total budget is:")
                 Text("\(tTotal)")
             }
-            Button{
+            Button("Convert"){
                 trueFalse = !trueFalse
+                if (trueFalse == false){
+                    tFood = budUSD.food
+                    tTrspt = budUSD.trspt
+                    tAccm = budUSD.accm
+                    tActv = budUSD.actv
+                    tTotal = budUSD.total
+                    }
+                if (trueFalse == true){
+                    tFood = budJPY.food
+                    tTrspt = budJPY.trspt
+                    tAccm = budJPY.accm
+                    tActv = budJPY.actv
+                    tTotal = budJPY.total
+                }
             }
-            if (trueFalse = false){
-                tFood = budUSD.food
-                tTrspt = budUSD.trspt
-                tAccm = budUSD.accm
-                tActv = budUSD.actv
-                tTotal = budUSD.total
-            }
+                
         }
     }
 }
