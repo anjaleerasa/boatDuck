@@ -34,6 +34,11 @@ struct financeCalculator: View {
                     savedNumber = integerValue
                 }
                 code = ""
+                tTotal = savedNumber
+                tFood = savedNumber * 0.2
+                tTrspt = savedNumber * 0.45
+                tAccm = savedNumber * 0.15
+                tActv = savedNumber * 0.2
                 //var totalUSD = savedNumber
             })
             //var totalUSD = savedNumber
@@ -52,6 +57,9 @@ struct financeCalculator: View {
             
             let budUSD = Budget(ntotal : totalUSD)
             let budJPY = Budget(ntotal : totalUSD * rateJPY)
+            
+            
+            
             
             Text("Recommended Budget:")
             
@@ -99,24 +107,6 @@ struct financeCalculator: View {
                     tTotal = budJPY.total
                 }
             }
-<<<<<<< Updated upstream
-                
-=======
-            if (trueFalse == false){
-                tFood = budUSD.food
-                tTrspt = budUSD.trspt
-                tAccm = budUSD.accm
-                tActv = budUSD.actv
-                tTotal = budUSD.total
-            }
-            if(trueFalse == true){
-                tFood = budJPY.food
-                tTrspt = budJPY.trspt
-                tAccm = budJPY.accm
-                tActv = budJPY.actv
-                tTotal = budJPY.total
-            }
->>>>>>> Stashed changes
         }
     }
 }
