@@ -10,7 +10,7 @@ import SwiftUI
 struct clothing: View {
     var body: some View {
         ZStack{
-            Color("money")
+            Color("background")
                 .ignoresSafeArea()
             Image("clothing")
                 .resizable()
@@ -23,4 +23,5 @@ struct clothing_Previews: PreviewProvider {
     static var previews: some View {
         clothing()
     }
-}
+    }
+

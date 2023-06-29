@@ -9,15 +9,19 @@ import SwiftUI
 
 struct culture: View {
     var body: some View {
+        ZStack{
+            Color("background")
+                .ignoresSafeArea()
         Image("duckFacts")
             .resizable()
-            .frame(width:480,height:630)
-        Text("culture view")
+            .frame(width:420,height:550)
+
     }
 }
 
 struct culture_Previews: PreviewProvider {
     static var previews: some View {
         culture()
+    }
     }
 }
