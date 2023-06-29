@@ -9,7 +9,15 @@ import SwiftUI
 
 struct financeCalculator: View {
     @State private var code = ""
-    @State private var savedNumber = Int()
+    @State private var savedNumber = Double()
+    @State public var tFood = 0.0
+    @State public var tTrspt = 0.0
+    @State public var tAccm = 0.0
+    @State public var tActv = 0.0
+    @State public var tTotal = 0.0
+    @State public var trueFalse= false
+  
+    
     var body: some View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         VStack{
@@ -22,13 +30,14 @@ struct financeCalculator: View {
                 .frame(width:300,height:40)
             
             Button(action:{
-                if let integerValue = Int(code){
+                if let integerValue = Double(code){
                     savedNumber = integerValue
                 }
                 code = ""
-                var totalUSD = savedNumber
-                    
+                //var totalUSD = savedNumber
             })
+            //var totalUSD = savedNumber
+
             {
                 Text("save number")
                     .font(.headline)
@@ -38,12 +47,54 @@ struct financeCalculator: View {
                     .cornerRadius(10)
                 
             }
-            var rateJPY = 144.93
+            let totalUSD = savedNumber
+            let rateJPY = 144.93
             
+            let budUSD = Budget(ntotal : totalUSD)
+            let budJPY = Budget(ntotal : totalUSD * rateJPY)
+            
+            Text("Recommended Budget:")
+            
+            //4 hstacks with two text boxes for display??
+            
+            //food
+            HStack{
+                Text("Your food budget is:")
+                Text("\(tFood)")
+            }
+            //transport
+            HStack{
+                Text("Your transportation budget is:")
+                Text("\(tTrspt)")
+            }
+            //accomodations
+            HStack{
+                Text("Your accomodations budget is:")
+                Text("\(tAccm)")
+            }
+            //activities
+            HStack{
+                Text("Your activites budget is:")
+                Text("\(tActv)")
+            }
+            //total
+            HStack{
+                Text("Your total budget is:")
+                Text("\(tTotal)")
+            }
+            Button{
+                trueFalse = !trueFalse
+            }
+            if (trueFalse = false){
+                tFood = budUSD.food
+                tTrspt = budUSD.trspt
+                tAccm = budUSD.accm
+                tActv = budUSD.actv
+                tTotal = budUSD.total
+            }
         }
     }
 }
-
 struct financeCalculator_Previews: PreviewProvider {
     static var previews: some View {
         financeCalculator()
