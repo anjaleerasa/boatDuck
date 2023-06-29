@@ -57,36 +57,72 @@ struct financeCalculator: View {
             
             let budUSD = Budget(ntotal : totalUSD)
             let budJPY = Budget(ntotal : totalUSD * rateJPY)
-            var currency = "$"
             
-            Text("Recommended Budget:")
-            
+            Text("Recommended Budget: \(currency)")
+                
             //4 hstacks with two text boxes for display??
             
             //food
+            /*
             HStack{
+                //.padding()
+                Spacer()
                 Text("Your food budget is:")
+                Spacer()
                 Text("\(currency)\(tFood)")
+                Spacer()
+                //.padding()
             }
             //transport
             HStack{
+                Spacer()
                 Text("Your transportation budget is:")
+                Spacer()
                 Text("\(currency)\(tTrspt)")
+                Spacer()
             }
+            
             //accomodations
             HStack{
+                Spacer()
                 Text("Your accomodations budget is:")
+                Spacer()
                 Text("\(currency)\(tAccm)")
+                Spacer()
             }
             //activities
             HStack{
+                Spacer()
                 Text("Your activites budget is:")
+                Spacer()
                 Text("\(currency)\(tActv)")
+                Spacer()
             }
             //total
             HStack{
+                Spacer()
                 Text("Your total budget is:")
+                Spacer()
                 Text("\(currency)\(tTotal)")
+                Spacer()
+            } */
+            
+            HStack{
+                VStack(alignment: .leading){
+                    Text("Total budget:")
+                    Text("Food budget:")
+                    Text("Transportation budget:")
+                    Text("Accomodations budget:")
+                    Text("Activities budget:")
+                        .multilineTextAlignment(.leading)
+                }
+                VStack{
+                    Text("\(currency)\(tTotal)")
+                    Text("\(currency)\(tFood)")
+                    Text("\(currency)\(tTrspt)")
+                    Text("\(currency)\(tAccm)")
+                    Text("\(currency)\(tActv)")
+                }
             }
             Button("Convert"){
                 trueFalse = !trueFalse
