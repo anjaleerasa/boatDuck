@@ -9,7 +9,13 @@ import SwiftUI
 
 struct clothing: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color("tessaColor")
+                .ignoresSafeArea()
+            Image("clothing")
+                .resizable()
+                .frame(width:440,height:630)
+        }
     }
 }
 

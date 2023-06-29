@@ -11,7 +11,7 @@ struct culture: View {
     var body: some View {
         Image("duckFacts")
             .resizable()
-            .frame(width:450,height:500)
+            .frame(width:480,height:630)
         Text("culture view")
     }
 }
