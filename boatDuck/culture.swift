@@ -9,7 +9,10 @@ import SwiftUI
 
 struct culture: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("duckFacts")
+            .resizable()
+            .frame(width:450,height:500)
+        Text("culture view")
     }
 }
 
