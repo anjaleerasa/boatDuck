@@ -73,7 +73,7 @@ struct ContentView: View {
                                     .resizable()
                                     .frame(width:100, height:100)
                                 NavigationLink(destination: clothing(), label: {
-                                    Image("upperRight")
+                                    Image("rightBlue")
                                         .resizable()
                                     .frame (width:150, height:150) })
                                 
