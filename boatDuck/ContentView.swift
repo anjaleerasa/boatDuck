@@ -45,10 +45,10 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $japanButt){
+                NavigationStack{
                 ZStack{
                     Color("colorSheet")
                         .ignoresSafeArea(.all)
-                    NavigationStack{
                     VStack{
                         HStack{
                             Button{
@@ -80,12 +80,10 @@ struct ContentView: View {
                             }
                             HStack{
                                 Spacer()
-                                Button{
-                                    nestedCultureButt = true
-                                }label:{
+                                NavigationLink(destination: financeCalculator(), label: {
                                     Image("lowerLeft")
                                         .resizable()
-                                    .frame(width:150, height:150)}
+                                    .frame (width:150, height:150) })
                                 Button{
                                     nestedCultureButt = true
                                 }label:{
