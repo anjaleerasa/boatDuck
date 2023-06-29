@@ -12,7 +12,6 @@ struct ContentView: View {
     @State private var cultureButt = false
     @State private var nestedCultureButt = false
     var body: some View {
-        NavigationStack{
             ZStack{
                 Color("tessaColor")
                     .edgesIgnoringSafeArea(.all)
@@ -42,13 +41,14 @@ struct ContentView: View {
                         .foregroundColor(Color(hue: 1.0, saturation: 0.061, brightness: 0.577))
                         .multilineTextAlignment(.center)
                     
-                    
+        
                 }
             }
             .sheet(isPresented: $japanButt){
                 ZStack{
                     Color("colorSheet")
                         .ignoresSafeArea(.all)
+                    NavigationStack{
                     VStack{
                         HStack{
                             Button{
@@ -56,52 +56,46 @@ struct ContentView: View {
                             }label: {
                                 Image("upperLeft")
                                     .resizable()
-                                .frame(width:150, height:150)}
-                            
-                            NavigationLink(destination: culture()), label: {
-                                Image("upperRight")
+                                .frame(width:150, height:150)} }
+    
+                            HStack{
+                                Button{
+                                    nestedCultureButt = true
+                                }label:{
+                                    Image("leftBlue")
+                                        .resizable()
+                                    .frame(width:150, height:150)}
+                                Image("swimDuck")
                                     .resizable()
-                                    .frame (width:150, height:150)
-                                
+                                    .frame(width:100, height:100)
+                                Button{
+                                    nestedCultureButt = true
+                                }label: {
+                                    Image("rightBlue")
+                                        .resizable()
+                                        .frame(width:150, height:150)
+                                }
+                                NavigationLink(destination: culture(), label: {
+                                    Image("upperRight")
+                                        .resizable()
+                                    .frame (width:150, height:150) })
                             }
-                            
-                        }
-                        
-                        
-                        HStack{
-                            Button{
-                                nestedCultureButt = true
-                            }label:{
-                                Image("leftBlue")
-                                    .resizable()
-                                .frame(width:150, height:150)}
-                            Image("swimDuck")
-                                .resizable()
-                                .frame(width:100, height:100)
-                            Button{
-                                nestedCultureButt = true
-                            }label: {
-                                Image("rightBlue")
-                                    .resizable()
-                                    .frame(width:150, height:150)
+                            HStack{
+                                Spacer()
+                                Button{
+                                    nestedCultureButt = true
+                                }label:{
+                                    Image("lowerLeft")
+                                        .resizable()
+                                    .frame(width:150, height:150)}
+                                Button{
+                                    nestedCultureButt = true
+                                }label:{
+                                    Image("lowerRight")
+                                        .resizable()
+                                    .frame(width:150, height:150)}
+                                Spacer()
                             }
-                        }
-                        
-                        HStack{
-                            Spacer()
-                            Button{
-                                nestedCultureButt = true
-                            }label:{
-                                Image("lowerLeft")
-                                    .resizable()
-                                .frame(width:150, height:150)}
-                            Button{
-                                nestedCultureButt = true
-                            }label:{
-                                Image("lowerRight")
-                                    .resizable()
-                                .frame(width:150, height:150)}
-                            Spacer()
                         }
                     }
                     
@@ -110,7 +104,7 @@ struct ContentView: View {
             }//end of sheet
         }//end of body
     }
-                }
+                
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
