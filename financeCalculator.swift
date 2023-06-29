@@ -10,11 +10,11 @@ import SwiftUI
 struct financeCalculator: View {
     @State private var code = ""
     @State private var savedNumber = Double()
-    @State public var tFood = 0.0
-    @State public var tTrspt = 0.0
-    @State public var tAccm = 0.0
-    @State public var tActv = 0.0
-    @State public var tTotal = 0.0
+    @State public var tFood = Double()
+    @State public var tTrspt = Double()
+    @State public var tAccm = Double()
+    @State public var tActv = Double()
+    @State public var tTotal = Double()
     @State public var trueFalse = false
     @State public var currency = "$"
     
@@ -63,49 +63,6 @@ struct financeCalculator: View {
             //4 hstacks with two text boxes for display??
             
             //food
-            /*
-            HStack{
-                //.padding()
-                Spacer()
-                Text("Your food budget is:")
-                Spacer()
-                Text("\(currency)\(tFood)")
-                Spacer()
-                //.padding()
-            }
-            //transport
-            HStack{
-                Spacer()
-                Text("Your transportation budget is:")
-                Spacer()
-                Text("\(currency)\(tTrspt)")
-                Spacer()
-            }
-            
-            //accomodations
-            HStack{
-                Spacer()
-                Text("Your accomodations budget is:")
-                Spacer()
-                Text("\(currency)\(tAccm)")
-                Spacer()
-            }
-            //activities
-            HStack{
-                Spacer()
-                Text("Your activites budget is:")
-                Spacer()
-                Text("\(currency)\(tActv)")
-                Spacer()
-            }
-            //total
-            HStack{
-                Spacer()
-                Text("Your total budget is:")
-                Spacer()
-                Text("\(currency)\(tTotal)")
-                Spacer()
-            } */
             
             HStack{
                 VStack(alignment: .leading){
