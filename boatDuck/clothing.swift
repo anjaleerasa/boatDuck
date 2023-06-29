@@ -10,7 +10,7 @@ import SwiftUI
 struct clothing: View {
     var body: some View {
         ZStack{
-            Color("tessaColor")
+            Color("money")
                 .ignoresSafeArea()
             Image("clothing")
                 .resizable()
