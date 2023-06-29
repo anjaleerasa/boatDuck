@@ -16,7 +16,7 @@ struct financeCalculator: View {
     @State public var tActv = 0.0
     @State public var tTotal = 0.0
     @State public var trueFalse = false
-  
+    @State public var currency = "$"
     
     var body: some View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -57,9 +57,7 @@ struct financeCalculator: View {
             
             let budUSD = Budget(ntotal : totalUSD)
             let budJPY = Budget(ntotal : totalUSD * rateJPY)
-            
-            
-            
+            var currency = "$"
             
             Text("Recommended Budget:")
             
@@ -68,31 +66,32 @@ struct financeCalculator: View {
             //food
             HStack{
                 Text("Your food budget is:")
-                Text("\(tFood)")
+                Text("\(currency)\(tFood)")
             }
             //transport
             HStack{
                 Text("Your transportation budget is:")
-                Text("\(tTrspt)")
+                Text("\(currency)\(tTrspt)")
             }
             //accomodations
             HStack{
                 Text("Your accomodations budget is:")
-                Text("\(tAccm)")
+                Text("\(currency)\(tAccm)")
             }
             //activities
             HStack{
                 Text("Your activites budget is:")
-                Text("\(tActv)")
+                Text("\(currency)\(tActv)")
             }
             //total
             HStack{
                 Text("Your total budget is:")
-                Text("\(tTotal)")
+                Text("\(currency)\(tTotal)")
             }
             Button("Convert"){
                 trueFalse = !trueFalse
                 if (trueFalse == false){
+                    currency = "$"
                     tFood = budUSD.food
                     tTrspt = budUSD.trspt
                     tAccm = budUSD.accm
@@ -100,6 +99,7 @@ struct financeCalculator: View {
                     tTotal = budUSD.total
                     }
                 if (trueFalse == true){
+                    currency = "¥"
                     tFood = budJPY.food
                     tTrspt = budJPY.trspt
                     tAccm = budJPY.accm
