@@ -59,6 +59,7 @@ struct financeCalculator: View {
             let budJPY = Budget(ntotal : totalUSD * rateJPY)
             
             Text("Recommended Budget: \(currency)")
+            Text("                 ")
                 
             //4 hstacks with two text boxes for display??
             
@@ -67,6 +68,7 @@ struct financeCalculator: View {
             HStack{
                 VStack(alignment: .leading){
                     Text("Total budget:")
+                    Text("             ")
                     Text("Food budget:")
                     Text("Transportation budget:")
                     Text("Accomodations budget:")
@@ -75,12 +77,14 @@ struct financeCalculator: View {
                 }
                 VStack{
                     Text("\(currency)\(tTotal)")
+                    Text("           ")
                     Text("\(currency)\(tFood)")
                     Text("\(currency)\(tTrspt)")
                     Text("\(currency)\(tAccm)")
                     Text("\(currency)\(tActv)")
                 }
             }
+            Text("               ")
             Button("Convert"){
                 trueFalse = !trueFalse
                 if (trueFalse == false){
