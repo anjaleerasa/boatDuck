@@ -45,10 +45,10 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $japanButt){
+                NavigationStack{
                 ZStack{
                     Color("colorSheet")
                         .ignoresSafeArea(.all)
-                    NavigationStack{
                     VStack{
                         HStack{
                             Button{
