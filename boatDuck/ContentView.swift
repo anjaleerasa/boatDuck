@@ -73,19 +73,17 @@ struct ContentView: View {
                                     .resizable()
                                     .frame(width:100, height:100)
                                 NavigationLink(destination: clothing(), label: {
-                                    Image("upperRight")
+                                    Image("rightBlue")
                                         .resizable()
                                     .frame (width:150, height:150) })
                                 
                             }
                             HStack{
                                 Spacer()
-                                Button{
-                                    nestedCultureButt = true
-                                }label:{
+                                NavigationLink(destination: financeCalculator(), label: {
                                     Image("lowerLeft")
                                         .resizable()
-                                    .frame(width:150, height:150)}
+                                    .frame (width:150, height:150) })
                                 Button{
                                     nestedCultureButt = true
                                 }label:{
