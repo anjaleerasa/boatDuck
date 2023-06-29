@@ -99,7 +99,24 @@ struct financeCalculator: View {
                     tTotal = budJPY.total
                 }
             }
+<<<<<<< Updated upstream
                 
+=======
+            if (trueFalse == false){
+                tFood = budUSD.food
+                tTrspt = budUSD.trspt
+                tAccm = budUSD.accm
+                tActv = budUSD.actv
+                tTotal = budUSD.total
+            }
+            if(trueFalse == true){
+                tFood = budJPY.food
+                tTrspt = budJPY.trspt
+                tAccm = budJPY.accm
+                tActv = budJPY.actv
+                tTotal = budJPY.total
+            }
+>>>>>>> Stashed changes
         }
     }
 }
