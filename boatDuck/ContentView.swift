@@ -56,8 +56,12 @@ struct ContentView: View {
                             }label: {
                                 Image("upperLeft")
                                     .resizable()
-                                .frame(width:150, height:150)} }
-    
+                                .frame(width:150, height:150)}
+                            NavigationLink(destination: culture(), label: {
+                                Image("upperRight")
+                                    .resizable()
+                                .frame (width:150, height:150) })
+                        }
                             HStack{
                                 Button{
                                     nestedCultureButt = true
@@ -68,17 +72,11 @@ struct ContentView: View {
                                 Image("swimDuck")
                                     .resizable()
                                     .frame(width:100, height:100)
-                                Button{
-                                    nestedCultureButt = true
-                                }label: {
-                                    Image("rightBlue")
-                                        .resizable()
-                                        .frame(width:150, height:150)
-                                }
-                                NavigationLink(destination: culture(), label: {
+                                NavigationLink(destination: clothing(), label: {
                                     Image("upperRight")
                                         .resizable()
                                     .frame (width:150, height:150) })
+                                
                             }
                             HStack{
                                 Spacer()
