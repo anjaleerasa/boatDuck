@@ -9,10 +9,14 @@ import SwiftUI
 
 struct FAQ: View {
     var body: some View {
+
         ZStack{
+                Color("background")
+                    .ignoresSafeArea()
             Image("FAQ")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .frame(width: 600, height: 600)
             
         }
     }
