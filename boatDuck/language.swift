@@ -61,7 +61,7 @@ struct language: View {
                 .padding()
             Link("Duolingo", destination: URL(string: "https://www.duolingo.com/course/ja/en/Learn-Japanese")!)
             Link("Rosetta Stone", destination: URL(string: "https://www.rosettastone.com/buy/learn-japanese/")!)
-            Link("Babbel", destination: URL(string: "https://get.babbel.com/promo_ame_usa-en_ap_prices/?bclid=ymnS9XxFQxyPTM9zNpzEaQKDUkF2jJRPP3SUw80&bsc=2023-impact-affiliate-july4th-promo&btp=default&irgwc=1&utm_campaign=Buyer%27s+Guide%E2%80%8B&utm_content=impact..13589..4th+of+July+Sale+-+For+a+limited+time+get+up+to+60%25+off+a+Babbel+subscription..1199942&utm_medium=affiliates&utm_source=impact&utm_term=generic_v1")!)
+            Link("Ling", destination: URL(string: "https://ling-app.com/learn-japanese/")!)
             Text("      ")
             Text("Translation Websites")
                 .padding()
