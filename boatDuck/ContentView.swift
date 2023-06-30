@@ -51,12 +51,10 @@ struct ContentView: View {
                         .ignoresSafeArea(.all)
                     VStack{
                         HStack{
-                            Button{
-                                nestedCultureButt = true
-                            }label: {
+                            NavigationLink(destination: FAQ(), label: {
                                 Image("upperLeft")
                                     .resizable()
-                                .frame(width:150, height:150)}
+                                .frame (width:150, height:150) })
                             NavigationLink(destination: culture(), label: {
                                 Image("upperRight")
                                     .resizable()
