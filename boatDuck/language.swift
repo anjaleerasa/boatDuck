@@ -72,6 +72,7 @@ struct language: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.leading)
+                        .padding()
                 }
                 Spacer()
                 VStack(alignment: .trailing){
@@ -115,6 +116,7 @@ struct language: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.leading)
                         .foregroundColor(Color("lang"))
+                        .padding()
                 }
                 Spacer()
             }
