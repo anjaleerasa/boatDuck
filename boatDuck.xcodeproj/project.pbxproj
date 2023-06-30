@@ -16,6 +16,7 @@
 		BD6E0F732A4E079700E3A1BA /* language.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E0F722A4E079700E3A1BA /* language.swift */; };
 		BD88EA132A4DD22E00BA2884 /* clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD88EA122A4DD22E00BA2884 /* clothing.swift */; };
 		BDD99AE42A4CACC2001274AD /* boatDuckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD99AE32A4CACC2001274AD /* boatDuckApp.swift */; };
+		BDE45C582A4F160C00FFCF94 /* activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE45C572A4F160C00FFCF94 /* activities.swift */; };
 		BDE807192A4CAF16006D6B73 /* budgetClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE807182A4CAF16006D6B73 /* budgetClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		BD6E0F722A4E079700E3A1BA /* language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = language.swift; sourceTree = "<group>"; };
 		BD88EA122A4DD22E00BA2884 /* clothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clothing.swift; sourceTree = "<group>"; };
 		BDD99AE32A4CACC2001274AD /* boatDuckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boatDuckApp.swift; sourceTree = "<group>"; };
+		BDE45C572A4F160C00FFCF94 /* activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activities.swift; sourceTree = "<group>"; };
 		BDE807182A4CAF16006D6B73 /* budgetClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = budgetClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				BD43E0902A4CA6600011549C /* culture.swift */,
 				BDD99AE32A4CACC2001274AD /* boatDuckApp.swift */,
 				BD6DF06B2A4B2F1900028DE5 /* ContentView.swift */,
+				BDE45C572A4F160C00FFCF94 /* activities.swift */,
 				BD88EA122A4DD22E00BA2884 /* clothing.swift */,
 				BD6DF0792A4B35BE00028DE5 /* moneyFile.swift */,
 				BD6DF06D2A4B2F1A00028DE5 /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE45C582A4F160C00FFCF94 /* activities.swift in Sources */,
 				BD88EA132A4DD22E00BA2884 /* clothing.swift in Sources */,
 				BDD99AE42A4CACC2001274AD /* boatDuckApp.swift in Sources */,
 				BDE807192A4CAF16006D6B73 /* budgetClass.swift in Sources */,
