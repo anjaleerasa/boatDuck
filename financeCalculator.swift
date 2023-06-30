@@ -48,7 +48,7 @@ struct financeCalculator: View {
                 //var totalUSD = savedNumber
                 
                 {
-                    Text("save number")
+                    Text("Calculate my budget!")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()
@@ -63,6 +63,8 @@ struct financeCalculator: View {
                 let budJPY = Budget(ntotal : totalUSD * rateJPY)
                 Text("           ")
                 Text("Recommended Budget: \(currency)")
+                    .font(.headline)
+                    .foregroundColor(Color(hue: 1.0, saturation: 0.407, brightness: 0.565))
                 Text("                 ")
                 
                 //4 hstacks with two text boxes for display??
@@ -101,15 +103,26 @@ struct financeCalculator: View {
                     }
                     VStack{
                         Text("\(currency)\(tTotal)")
+                            .font(.headline)
+                            .foregroundColor(Color(hue: 1.0, saturation: 0.407, brightness: 0.565))
                         Text("           ")
                         Text("\(currency)\(tFood)")
+                            .font(.headline)
+                            .foregroundColor(Color(hue: 1.0, saturation: 0.407, brightness: 0.565))
                         Text("\(currency)\(tTrspt)")
+                            .font(.headline)
+                            .foregroundColor(Color(hue: 1.0, saturation: 0.407, brightness: 0.565))
                         Text("\(currency)\(tAccm)")
+                            .font(.headline)
+                            .foregroundColor(Color(hue: 1.0, saturation: 0.407, brightness: 0.565))
                         Text("\(currency)\(tActv)")
+                            .font(.headline)
+                            .foregroundColor(Color(hue: 1.0, saturation: 0.407, brightness: 0.565))
                     }
                 }
                 Text("               ")
                 Button("Convert"){
+                    
                     trueFalse = !trueFalse
                     if (trueFalse == false){
                         currency = "$"
