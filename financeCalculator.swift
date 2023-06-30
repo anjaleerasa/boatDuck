@@ -29,7 +29,7 @@ struct financeCalculator: View {
                     .textContentType(.oneTimeCode)
                     .keyboardType(.numberPad)
                     .padding()
-                    .border(Color(hue: 0.067, saturation: 0.17, brightness: 0.849))
+                    .border(Color(hue: 1.0, saturation: 0.407, brightness: 0.565))
                     .multilineTextAlignment(.center)
                     .frame(width:300,height:40)
                 Text("       ")
@@ -121,7 +121,7 @@ struct financeCalculator: View {
                     }
                 }
                 Text("               ")
-                Button("Convert"){
+                Button("Convert to JPY/USD"){
                     
                     trueFalse = !trueFalse
                     if (trueFalse == false){
@@ -141,6 +141,12 @@ struct financeCalculator: View {
                         tTotal = budJPY.total
                     }
                 }
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color(hue: 0.012, saturation: 0.073, brightness: 0.749))
+                .cornerRadius(10)
+               
             }
         }
     }
