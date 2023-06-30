@@ -29,7 +29,7 @@ struct financeCalculator: View {
                 .border(Color(hue: 0.067, saturation: 0.17, brightness: 0.849))
                 .multilineTextAlignment(.center)
                 .frame(width:300,height:40)
-            
+            Text("       ")
             Button(action:{
                 if let integerValue = Double(code){
                     savedNumber = integerValue
@@ -58,7 +58,7 @@ struct financeCalculator: View {
             
             let budUSD = Budget(ntotal : totalUSD)
             let budJPY = Budget(ntotal : totalUSD * rateJPY)
-            
+            Text("           ")
             Text("Recommended Budget: \(currency)")
             Text("                 ")
                 
