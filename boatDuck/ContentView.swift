@@ -63,12 +63,10 @@ struct ContentView: View {
                                 .frame (width:150, height:150) })
                         }
                             HStack{
-                                Button{
-                                    nestedCultureButt = true
-                                }label:{
+                                NavigationLink(destination: language(), label: {
                                     Image("leftBlue")
                                         .resizable()
-                                    .frame(width:150, height:150)}
+                                    .frame (width:150, height:150) })
                                 Image("swimDuck")
                                     .resizable()
                                     .frame(width:100, height:100)
