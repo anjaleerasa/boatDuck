@@ -10,6 +10,8 @@ import SwiftUI
 struct activities: View {
     var body: some View {
         ZStack{
+            Color("background")
+                .ignoresSafeArea()
             Image("activity")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
