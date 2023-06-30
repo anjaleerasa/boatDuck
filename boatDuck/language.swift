@@ -125,6 +125,11 @@ struct language: View {
                 
                 lang = true
             }
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color("lang"))
+            .cornerRadius(10)
             
         }
     }
