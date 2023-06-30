@@ -44,14 +44,24 @@ struct language: View {
             .padding()
             //            Text("Language and Vocabulary")
             //            Text("Learning Apps/Websites")
-            Button("Language Learning Websites/Apps "){
+            Button("Language Learning and Translation Websites"){
                 lang = true
             }
             
         }
         .sheet(isPresented: $lang){
             //tea background???
+            Text("Language Learning Websites")
+                .padding()
             Link("Duolingo", destination: URL(string: "https://www.duolingo.com/course/ja/en/Learn-Japanese")!)
+            Link("Rosetta Stone", destination: URL(string: "https://www.rosettastone.com/?gclid=CjwKCAjw-vmkBhBMEiwAlrMeF55ygrZOwlQFhBhUIEsqidCneQumdoTpBtRShA3Cm56hFFIT9cedVxoCfIAQAvD_BwE")!)
+            Link("Babbel", destination: URL(string: "https://get.babbel.com/promo_ame_usa-en_ap_prices/?bclid=ymnS9XxFQxyPTM9zNpzEaQKDUkF2jJRPP3SUw80&bsc=2023-impact-affiliate-july4th-promo&btp=default&irgwc=1&utm_campaign=Buyer%27s+Guide%E2%80%8B&utm_content=impact..13589..4th+of+July+Sale+-+For+a+limited+time+get+up+to+60%25+off+a+Babbel+subscription..1199942&utm_medium=affiliates&utm_source=impact&utm_term=generic_v1")!)
+            Text("      ")
+            Text("Translation Websites")
+                .padding()
+            Link("Google Translate", destination: URL(string: "https://apps.apple.com/us/app/google-translate/id414706506")!)
+            Link("iTranslate", destination: URL(string: "https://apps.apple.com/us/app/itranslate-translator/id288113403")!)
+            Link("Waygo", destination: URL(string: "https://apps.apple.com/us/app/waygo-chinese-japanese-and-korean-translator/id496038103")!)
         }
     }
 }
