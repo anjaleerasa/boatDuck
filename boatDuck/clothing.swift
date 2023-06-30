@@ -14,7 +14,7 @@ struct clothing: View {
                 .ignoresSafeArea()
             Image("clothing")
                 .resizable()
-                .frame(width:440,height:630)
+                .frame(width:410,height:600)
         }
     }
 }
