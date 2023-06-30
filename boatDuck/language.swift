@@ -136,19 +136,55 @@ struct language: View {
             
         }
     }
-        .sheet(isPresented: $lang){
-            //tea background???
-            Text("Language Learning Websites")
-                .padding()
-            Link("Duolingo", destination: URL(string: "https://www.duolingo.com/course/ja/en/Learn-Japanese")!)
-            Link("Rosetta Stone", destination: URL(string: "https://www.rosettastone.com/buy/learn-japanese/")!)
-            Link("Ling", destination: URL(string: "https://ling-app.com/learn-japanese/")!)
-            Text("      ")
-            Text("Translation Websites")
-                .padding()
-            Link("Google Translate", destination: URL(string: "https://apps.apple.com/us/app/google-translate/id414706506")!)
-            Link("iTranslate", destination: URL(string: "https://apps.apple.com/us/app/itranslate-translator/id288113403")!)
-            Link("Waygo", destination: URL(string: "https://apps.apple.com/us/app/waygo-chinese-japanese-and-korean-translator/id496038103")!)
+    .sheet(isPresented: $lang){
+        //tea background???
+        ZStack{
+                Color("blue")
+                    .ignoresSafeArea(.all)
+            VStack{
+                Text("✿-Language Learning Websites-✿")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("lang"))
+                    .padding()
+                Link("Duolingo", destination: URL(string: "https://www.duolingo.com/course/ja/en/Learn-Japanese")!)
+                    .foregroundColor((Color(hue: 1.0, saturation: 0.107, brightness: 0.565))
+                        )
+                .font(.headline)
+                .fontWeight(.semibold)
+                Link("Rosetta Stone", destination: URL(string: "https://www.rosettastone.com/buy/learn-japanese/")!)
+                    .foregroundColor((Color(hue: 1.0, saturation: 0.107, brightness: 0.565))
+                        )
+                .font(.headline)
+                .fontWeight(.semibold)
+                Link("Ling", destination: URL(string: "https://ling-app.com/learn-japanese/")!)
+                    .foregroundColor((Color(hue: 1.0, saturation: 0.107, brightness: 0.565))
+                        )
+                .font(.headline)
+                .fontWeight(.semibold)
+                Text("      ")
+                Text("✿-Translation Websites-✿")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("lang"))
+                    .padding()
+                Link("Google Translate", destination: URL(string: "https://apps.apple.com/us/app/google-translate/id414706506")!)
+                    .foregroundColor((Color(hue: 1.0, saturation: 0.107, brightness: 0.565))
+                        )
+                .font(.headline)
+                .fontWeight(.semibold)
+                Link("iTranslate", destination: URL(string: "https://apps.apple.com/us/app/itranslate-translator/id288113403")!)
+                    .foregroundColor((Color(hue: 1.0, saturation: 0.107, brightness: 0.565))
+                        )
+                .font(.headline)
+                .fontWeight(.semibold)
+                Link("Waygo", destination: URL(string: "https://apps.apple.com/us/app/waygo-chinese-japanese-and-korean-translator/id496038103")!)
+                    .foregroundColor((Color(hue: 1.0, saturation: 0.107, brightness: 0.565))
+                        )
+                .font(.headline)
+                .fontWeight(.semibold)
+            }
+        }
         }
     }
 }
