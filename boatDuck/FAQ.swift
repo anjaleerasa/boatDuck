@@ -1,5 +1,5 @@
 //
-//  activities.swift
+//  FAQ.swift
 //  boatDuck
 //
 //  Created by Scholar on 6/30/23.
@@ -7,21 +7,19 @@
 
 import SwiftUI
 
-struct activities: View {
+struct FAQ: View {
     var body: some View {
         ZStack{
-            Image("activity")
+            Image("FAQ")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-        }
             
-        
-        
+        }
     }
 }
 
-struct activities_Previews: PreviewProvider {
+struct FAQ_Previews: PreviewProvider {
     static var previews: some View {
-        activities()
+        FAQ()
     }
 }

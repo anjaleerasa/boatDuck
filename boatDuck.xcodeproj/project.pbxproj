@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD32BB6A2A4F1D0D002962D1 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32BB692A4F1D0D002962D1 /* FAQ.swift */; };
 		BD43E0912A4CA6600011549C /* culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43E0902A4CA6600011549C /* culture.swift */; };
 		BD6DF06C2A4B2F1900028DE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF06B2A4B2F1900028DE5 /* ContentView.swift */; };
 		BD6DF06E2A4B2F1A00028DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DF06D2A4B2F1A00028DE5 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD32BB692A4F1D0D002962D1 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		BD43E0902A4CA6600011549C /* culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = culture.swift; sourceTree = "<group>"; };
 		BD6DF0662A4B2F1900028DE5 /* boatDuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boatDuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6DF06B2A4B2F1900028DE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				BDD99AE32A4CACC2001274AD /* boatDuckApp.swift */,
 				BD6DF06B2A4B2F1900028DE5 /* ContentView.swift */,
 				BDE45C572A4F160C00FFCF94 /* activities.swift */,
+				BD32BB692A4F1D0D002962D1 /* FAQ.swift */,
 				BD88EA122A4DD22E00BA2884 /* clothing.swift */,
 				BD6DF0792A4B35BE00028DE5 /* moneyFile.swift */,
 				BD6DF06D2A4B2F1A00028DE5 /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 				BD6DF06C2A4B2F1900028DE5 /* ContentView.swift in Sources */,
 				BD6E0F732A4E079700E3A1BA /* language.swift in Sources */,
 				BD6DF07A2A4B35BE00028DE5 /* moneyFile.swift in Sources */,
+				BD32BB6A2A4F1D0D002962D1 /* FAQ.swift in Sources */,
 				BD6DF0782A4B344300028DE5 /* financeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
