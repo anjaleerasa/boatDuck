@@ -10,6 +10,9 @@ import SwiftUI
 struct language: View {
     @State private var lang = false
     var body: some View {
+    ZStack{
+        Color("tessaColor")
+            .edgesIgnoringSafeArea(.all)
         VStack{
             Text("Key Japanese Words/Phrases")
             HStack{
@@ -45,10 +48,12 @@ struct language: View {
             //            Text("Language and Vocabulary")
             //            Text("Learning Apps/Websites")
             Button("Language Learning and Translation Websites"){
+                
                 lang = true
             }
             
         }
+    }
         .sheet(isPresented: $lang){
             //tea background???
             Text("Language Learning Websites")
